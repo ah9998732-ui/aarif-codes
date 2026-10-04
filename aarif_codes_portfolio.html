@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aarif Raza - AARIF CODES personal portfolio">
+<title>AARIF CODES | Aarif Raza</title>
+<style>
+:root{
+  --bg:#05070b; --card:#0b1018; --text:#f4f7fb; --muted:#9aa7b8;
+  --accent:#19d3ff; --accent2:#7c5cff; --border:#182332;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+  background:radial-gradient(circle at 80% 10%,#10233a 0,transparent 28%),var(--bg);
+  color:var(--text); line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  background:rgba(5,7,11,.78);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border)
+}
+.navin{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:1px;font-size:20px}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:25px;color:#c5cfdb;font-size:14px}
+.navlinks a:hover{color:var(--accent)}
+.hero{min-height:100vh;display:grid;place-items:center;padding:110px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.badge{
+  display:inline-block;padding:7px 13px;border:1px solid #1b3a4b;
+  background:#08131c;border-radius:999px;color:var(--accent);font-size:13px;margin-bottom:20px
+}
+h1{font-size:clamp(48px,8vw,88px);line-height:.95;letter-spacing:-4px}
+h1 span{color:var(--accent)}
+.hero p{max-width:650px;color:var(--muted);font-size:18px;margin:25px 0}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  padding:12px 19px;border-radius:12px;border:1px solid var(--border);
+  background:#0d141e;font-weight:700
+}
+.btn.primary{background:var(--accent);color:#031016;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+.profile{
+  aspect-ratio:1;border-radius:30px;border:1px solid #1c3448;
+  background:linear-gradient(145deg,#0c1824,#080b11);
+  display:grid;place-items:center;box-shadow:0 0 70px rgba(25,211,255,.08)
+}
+.profile .mark{
+  width:170px;height:170px;border-radius:50%;display:grid;place-items:center;
+  border:2px solid var(--accent);color:var(--accent);font-size:70px;font-weight:900;
+  box-shadow:0 0 45px rgba(25,211,255,.15)
+}
+section{padding:90px 0}
+.section-title{font-size:38px;margin-bottom:12px}
+.section-sub{color:var(--muted);margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:linear-gradient(180deg,#0b1119,#080c12);border:1px solid var(--border);
+  border-radius:18px;padding:25px
+}
+.card h3{margin-bottom:10px}.card p{color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.tag{padding:7px 10px;border-radius:8px;background:#101923;color:#b9c8d8;font-size:13px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.timeline{border-left:2px solid #1b2a3b;padding-left:20px}
+.timeline h3{margin-bottom:7px}
+.timeline p{color:var(--muted)}
+.socials{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.social{padding:20px;border:1px solid var(--border);border-radius:15px;background:#0b1018}
+.social b{display:block;margin-bottom:5px}.social small{color:var(--muted)}
+footer{padding:35px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
+@media(max-width:800px){
+  .navlinks{display:none}.hero-grid,.about{grid-template-columns:1fr}
+  .profile{max-width:330px;margin:auto}.grid,.socials{grid-template-columns:1fr}
+  h1{letter-spacing:-2px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container navin">
+    <a class="logo" href="#home">AARIF<span>CODES</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">WELCOME TO MY DIGITAL SPACE</div>
+      <h1>I'm <span>Aarif</span> Raza.</h1>
+      <p>
+        18-year-old creator from Siwan, Bihar, building my journey around coding,
+        digital creativity and content creation. This is my personal space on the web.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#about">Explore My Story</a>
+        <a class="btn" href="https://www.instagram.com/aarif.codes" target="_blank">Instagram ↗</a>
+        <a class="btn" href="https://youtube.com/@aarif.codes2026" target="_blank">YouTube ↗</a>
+      </div>
+    </div>
+    <div class="profile"><div class="mark">AR</div></div>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-sub">A little introduction about the person behind AARIF CODES.</p>
+  <div class="about">
+    <div class="card">
+      <h3>Who I Am</h3>
+      <p>
+        My name is <b>Aarif Raza</b>. I am from <b>Siwan, Bihar</b>.
+        I’m interested in technology, coding, digital creativity and creating content
+        that represents my own style. I’m learning, experimenting and improving every day.
+      </p>
+    </div>
+    <div class="card timeline">
+      <h3>My Mindset</h3>
+      <p>Learn → Build → Create → Improve → Repeat.</p>
+      <br>
+      <p>I believe consistency matters more than trying to become perfect on day one.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+  <h2 class="section-title">What I Do</h2>
+  <p class="section-sub">The areas I’m developing and working on.</p>
+  <div class="grid">
+    <div class="card"><h3>💻 Coding</h3><p>Learning web development and building clean, useful digital projects.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></div>
+    <div class="card"><h3>🎨 Digital Creativity</h3><p>Creating visual ideas, profiles, banners and social-media content with a modern style.</p><div class="tags"><span class="tag">Design</span><span class="tag">Editing</span><span class="tag">Content</span></div></div>
+    <div class="card"><h3>🎮 Gaming Content</h3><p>Gaming is one of my interests, especially BGMI and gaming-focused content creation.</p><div class="tags"><span class="tag">BGMI</span><span class="tag">Gaming</span><span class="tag">Reels</span></div></div>
+  </div>
+</div>
+</section>
+
+<section id="journey">
+<div class="container">
+  <h2 class="section-title">My Journey & Goal</h2>
+  <p class="section-sub">Where I’m heading.</p>
+  <div class="card">
+    <h3>🚀 Future Goal</h3>
+    <p>
+      My goal is to become a strong tech and digital creator, build useful websites and
+      projects, grow <b>AARIF CODES</b> into a recognizable personal brand, and keep
+      improving my skills through real-world projects.
+    </p>
+    <div class="tags">
+      <span class="tag">Learn Technology</span><span class="tag">Build Projects</span>
+      <span class="tag">Grow AARIF CODES</span><span class="tag">Create Impact</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <h2 class="section-title">Let's Connect</h2>
+  <p class="section-sub">Find me on my social platforms.</p>
+  <div class="socials">
+    <a class="social" href="https://www.instagram.com/aarif.codes" target="_blank"><b>📸 Instagram</b><small>@aarif.codes</small></a>
+    <a class="social" href="https://youtube.com/@aarif.codes2026" target="_blank"><b>▶️ YouTube</b><small>AARIF CODES</small></a>
+    <a class="social" href="https://wa.me/919155927289" target="_blank"><b>💬 WhatsApp</b><small>Chat with me</small></a>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 AARIF CODES • Built with passion by Aarif Raza.</footer>
+</body>
+</html>
