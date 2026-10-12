@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2d">
+  <meta name="description" content="Manoj Sweets & Cold Drink Madarpur — wholesale beverage orders">
+  <title>Manoj Sweets & Cold Drink | Madarpur</title>
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<header class="hero">
+  <div class="nav"><div class="brandmark">MS</div><div><p class="eyebrow">MADARPUR • WHOLESALE</p><h1>Manoj Sweets <span>& Cold Drink</span></h1></div></div>
+  <p class="intro">Cold drinks, water aur beverages ki wholesale peti booking — order se delivery tak status yahin dekhein.</p>
+  <div class="hero-tags"><span>✓ Wholesale rates</span><span>✓ COD + Online</span><span>✓ Order tracking</span></div>
+</header>
+<main class="wrap">
+  <section class="section-heading"><div><p class="eyebrow">CATALOGUE</p><h2>Products & Rates</h2></div><div class="cart-pill">Cart <b id="cart-count">0</b></div></section>
+  <p class="hint">Rates owner ke diye hue wholesale rates hain. Order place karne se pehle peti quantity aur final rate shop se confirm kar sakte hain.</p>
+  <div id="products" class="products"></div>
+  <section class="panel">
+    <p class="eyebrow">CHECKOUT</p><h2>Order details</h2>
+    <div id="cart-lines" class="cart-lines"><p class="hint">Cart mein product add karein.</p></div>
+    <div class="total-line"><span>Estimated total</span><strong id="cart-total">₹0</strong></div>
+    <form id="checkout-form">
+      <div class="fields">
+        <label>Customer name<input name="name" required autocomplete="name" placeholder="Aapka naam"></label>
+        <label>Mobile number<input name="phone" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile"></label>
+        <label class="full">Delivery address<input name="address" required autocomplete="street-address" placeholder="Gaon, mohalla, landmark"></label>
+        <label>Payment method<select name="paymentMethod"><option value="cod">Cash on Delivery</option><option value="online">Online payment (UPI/card etc.)</option></select></label>
+        <label>Delivery note (optional)<input name="note" placeholder="Timing ya landmark"></label>
+      </div>
+      <button class="btn primary" type="submit" id="place-order">Place order</button>
+      <p class="hint tiny">Online payment test mode mein chalega jab tak Razorpay live keys configure na hon. Order confirmation aur payment status alag cheezein hain.</p>
+    </form>
+    <div id="checkout-result" aria-live="polite"></div>
+  </section>
+  <section class="panel">
+    <p class="eyebrow">CUSTOMER TRACKING</p><h2>Order kahan tak pahuncha?</h2>
+    <form id="track-form" class="track-form">
+      <label>Order ID<input name="orderId" required placeholder="Example: MS-ABC123"></label>
+      <label>Order wala mobile<input name="phone" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile"></label>
+      <button class="btn secondary" type="submit">Track order</button>
+    </form>
+    <div id="tracking-result" aria-live="polite"></div>
+  </section>
+
+</main>
+<footer><b>Manoj Sweets & Cold Drink Madarpur</b><p>Independent wholesale shop • All brand names belong to their respective owners.</p><a href="https://www.instagram.com/aarif.codes?psln=MWJtdjV6OWJ5d2JlZw==" target="_blank" rel="noopener">Website by Aarif.codes</a></footer>
+<script type="module" src="/app.js"></script>
+</body></html>
